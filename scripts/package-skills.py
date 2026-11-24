@@ -17,9 +17,12 @@ description: IELTS speaking mock tests, focused Part drills, speaking diaries, e
 description_zh: 雅思口语模考、Part专项训练、自由表达、表达复习与学习计划。
 description_en: IELTS speaking mock tests, focused Part drills, speaking diaries, expression review, and learning plans.
 examples_zh:
-  - "带我做一轮Part 1专项训练，先让我自己回答。"
-  - "开始一次完整口语模考，结束后再统一反馈。"
-  - "我想自由说三分钟，聊聊今天发生的事。"
+  - "口语模考"
+  - "Part 1专项训练"
+  - "三分钟口语日记"
+  - "复习表达"
+  - "安排口语计划"
+  - "查看本周周报"
 version: 1.0.0
 author: 加米实验室
 ---
