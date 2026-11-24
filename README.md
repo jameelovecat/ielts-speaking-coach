@@ -2,105 +2,97 @@
 
 **先把自己的话说出来，再一起把它说得更好。**
 
-这是一套面向 AI Agent 的雅思口语训练 Skill，重点适配 WorkBuddy 和 ChatGPT Skills。它把模考、专项训练、自由表达和复习分开，让练习有目标、有反馈，也留有自己的表达空间。
+这是一个面向 AI Agent 的雅思口语练习 Skill，适配 WorkBuddy 和 ChatGPT Skills。它把口语模考、Part 专项训练、自由表达、表达复习和每周复盘放在同一套流程里。
 
-## 适合谁
+## 可以用它做什么
 
-- 想练雅思口语，但不想一开口就被打断纠错。
-- 习惯先自己组织语言，再看修改建议和参考方向。
-- 想把完整模考、刻意训练和日常自由表达分开进行。
-- 希望从真实练习中积累常见问题、词汇搭配和表达结构。
+| 模块 | 怎么练 |
+| --- | --- |
+| 完整口语模考 | 按 Part 1、Part 2、Part 3 完成一整场；中途不提示、不纠错，结束后再按评分维度复盘。 |
+| Part 专项训练 | 选择 Part 或具体能力，先自己组织并说完，再获得少量针对性反馈；参考示范放在尝试之后。 |
+| 三分钟口语日记 | 自由聊今天的经历或自选话题，不按考试打分；表达结束后再整理反馈。 |
+| 表达本与间隔复习 | 从真实练习中积累词汇搭配、常用句型和回答结构；到期后先回忆、再核对和更新掌握情况。 |
+| 学习计划与提醒 | 结合目标、基础和每周可用时间，一起安排练习和复习；提醒时间由用户确认。 |
+| 每周周报 | 汇总本周练习、反复出现的问题、表达复习进展，并列出下周一至三个优先目标。 |
 
-本 Skill 只负责口语练习，不提供真题资料、录音工具或自动计时器。雅思口语评分和考试时长参考官方说明；AI反馈用于学习，不等同正式成绩。
+## 练习原则
 
-## 设计方式
+### 先表达，后纠错
 
-### 先说，再反馈
-
-回答过程中不打断、不纠错、不提前给范文。说完后再按「原话 → 建议表达 → 简短原因 → 可选重试」给少量反馈，尽量保留你的意思、语气和个人风格。参考答案是练习后的可选方向，不是要背的标准答案。
+练习过程中不打断。回答完成后，反馈会围绕「原话 → 建议表达 → 简短原因 → 可选重试」展开，优先处理最值得改的少数问题，并尽量保留个人意思和表达风格。参考答案是可选示范，不要求背诵。
 
 ### 模考和专项训练分开
 
-完整模考按 Part 1、Part 2、Part 3 的考试流程进行，中途不教学，结束后再复盘；专项训练只练一个 Part 或一种能力，做完一题就聚焦一个改进点。另有三分钟自由口语日记和表达复习。
+模考模拟考试流程，结束后统一复盘；专项训练围绕一个 Part 或能力，答完一题就练一个改进点。自由口语日记则用于练习日常连续表达，不套考试评分。
 
-### 计划来自真实时间和练习记录
+## 表达复习怎么进行
 
-首次使用或模考后，Agent 会和你讨论目标、基础、每周时间和训练安排。提醒、文件记录和周报取决于平台当前功能与授权；没有真实记录时，不会编造时长、分数或进度。
+每次练习后，可以把值得复用的搭配、句型和表达结构整理进表达本。复习时，Agent 先给含义相近的提示，让你自己回忆或造句，再反馈是否自然、准确。只有你实际作答后，才更新该条目的掌握状态和下次复习日期。
 
-## 安装与开始
+复习间隔沿用你已有的安排；如果还没有，可以一起采用例如 **1、2、4、7、15、30 天**的间隔。平台不能保存文件时，Agent 会给出可复制的表达记录，不会假装已经写入。
 
-### 最快方式：把仓库链接发给技能创建器
+## 学习计划和每周周报
 
-告诉 WorkBuddy 或 ChatGPT 的技能创建对话，使用这个公开仓库中的口语 Skill：
+第一次使用时，Agent 会先了解你的目标、基础、可投入时间和练习偏好。没有近期口语成绩时，会建议先安排一次诊断模考，再依据实际表现调整计划。计划应适合你的时间，不预设所有人每天练习多久。
+
+周报根据实际练习记录整理，包含：
+
+- 本周计划和实际完成的练习；有可靠计时记录时才汇报分钟数。
+- 完成的模考、专项训练和口语日记。
+- 反复出现的语法、词汇和组织问题，并附真实练习例句。
+- 表达复习结果，以及仍待复习的内容。
+- 下周一至三个优先目标和建议安排。
+
+如果平台能读取记录并支持定时任务，可以按约定时间生成周报或发送提醒；否则，Agent 会提醒你回到对话并提供记录，再据此整理。没有记录时不会编造数据，也不会把提醒当成练习完成。
+
+## 开始使用
+
+最简单的方式，是把公开仓库链接和下面这句话发给 WorkBuddy 或 ChatGPT 的 Skill 创建对话：
 
 ```text
 https://github.com/jameelovecat/ielts-speaking-coach
 ```
 
-并指定目录 `skills/ielts-speaking-coach/`。可以直接复制这句：
-
 > 请根据这个 GitHub 仓库里的 `skills/ielts-speaking-coach/` 创建并安装雅思口语陪练 Skill，并读取该目录中的 references。
 
-### WorkBuddy
-
-打开「专家 · 技能 · 连接器」→「技能」→「添加技能」→「创建技能」，把上面的仓库链接和指令发给创建对话。创建后，说「开始练雅思口语」。
-
-### ChatGPT
-
-在 ChatGPT「Skills」中选择「Create」→「Create with chat」，发送上面的仓库链接和指令，按提示安装。Skills 是否可用取决于账号、工作区设置和产品开放范围；若看不到 Skills 入口，当前账号可能还不能安装。
-
-### 命令行
-
-使用支持 Skills CLI 的 Agent（例如 Codex）时，可直接运行：
+- **WorkBuddy**：打开「专家 · 技能 · 连接器」→「技能」→「添加技能」→「创建技能」，发送仓库链接和上面的指令。
+- **ChatGPT**：在「Skills」中选择「Create」→「Create with chat」，发送仓库链接和上面的指令。Skills 是否可用取决于账号及工作区设置。
+- **命令行**：支持 Skills CLI 的 Agent（例如 Codex）可以运行：
 
 ```bash
 npx skills add jameelovecat/ielts-speaking-coach --skill ielts-speaking-coach -g -a codex
 ```
 
-如果创建对话无法读取 GitHub 仓库，仍可改用[WorkBuddy 安装包](dist/ielts-speaking-coach-workbuddy.zip)或[ChatGPT Skills 安装包](dist/ielts-speaking-coach-chatgpt.zip)上传。
+如果创建对话无法读取仓库，可上传 [WorkBuddy 安装包](dist/ielts-speaking-coach-workbuddy.zip)或 [ChatGPT Skills 安装包](dist/ielts-speaking-coach-chatgpt.zip)。普通豆包可参考[个人智能体备用设定](skills/ielts-speaking-coach/adapters/doubao-personal-agent.md)；这个简版不包含文件记录和定时提醒承诺。
 
-### 豆包备用方式
+安装后，可以直接说：
 
-普通豆包暂不提供完整 Skill 包。可以打开[豆包个人智能体备用设定](skills/ielts-speaking-coach/adapters/doubao-personal-agent.md)，复制其中的设定到智能体里使用。这个简版不承诺本地记录、自动提醒或周报。
-
-## 练习入口
-
-安装后直接选一句开始：
-
-- 「带我做一轮 Part 1 专项训练，先让我自己回答。」
-- 「开始一次完整口语模考，结束后再统一反馈。」
+- 「带我练 Part 1，先让我自己回答，最后再反馈。」
+- 「开始一次完整口语模考，结束后统一复盘。」
 - 「我想自由说三分钟，聊聊今天发生的事。」
-- 「复习表达本里的到期内容，一次考我一个。」
-- 「先和我聊聊每周能练几次，再一起定一个计划。」
+- 「把今天练习里值得复习的搭配和句型整理进表达本。」
+- 「先和我确定每周计划，并安排每周复习和周报。」
 
-第一次练习前，Agent 会简单说明本次目标和大致用时；如要设置提醒，会先和你商量时间。真实作答时长需要语音或可靠计时功能支持。
+## 题目来源
 
-## 留下反馈，一起迭代
+练习可使用社区整理的 [zeeklog／IELTS 资料库](https://zeeklog.github.io/IELTS/)及其 [GitHub 仓库](https://github.com/zeeklog/IELTS)，也可使用你提供且有权使用的材料。开始练真题时，可以指定剑桥册数、Test 和 Part；Agent 应标明题目来源。原创题会标注为雅思风格练习，不称作真题或预测。
 
-这套练习方式来自真实使用，也需要更多人的实际反馈。练过之后，欢迎告诉我哪种引导有效、哪里卡住、你希望增加什么。
+本仓库提供练习 Skill 和资料来源指引，不打包第三方剑桥真题全文、PDF 或音频。不要把个人成绩、练习记录、录音或无权公开的材料提交到公开仓库。
+
+## 反馈与联系
+
+欢迎在 [GitHub 提交问题或建议](https://github.com/jameelovecat/ielts-speaking-coach/issues)，或通过 [X @Jamee_now](https://x.com/Jamee_now) 和公众号留言。后续会根据实际使用反馈持续改进。
 
 **Jamee／加米 · 加米实验室**
 
-[GitHub @jameelovecat](https://github.com/jameelovecat) · [提交问题或建议](https://github.com/jameelovecat/ielts-speaking-coach/issues) · [X @Jamee_now](https://x.com/Jamee_now)
-
-公众号「Jam Studio 加米实验室」欢迎扫码关注并留言：
+公众号「Jam Studio 加米实验室」：
 
 <img src="assets/wechat-account-qr.png" width="220" alt="Jam Studio 加米实验室公众号二维码">
 
-## 口语题库来源
-
-练习可使用社区整理的 [zeeklog／IELTS 资料库](https://zeeklog.github.io/IELTS/)（[GitHub 仓库](https://github.com/zeeklog/IELTS)）。开始模考前，告诉 Agent 你要练的剑桥册数、Test 和 Part；Agent 应标出题目来源。仓库提供练习流程和来源指引，不打包第三方剑桥真题 PDF 或音频。
-
-## 资料与隐私
-
-- 本项目不打包剑桥真题 PDF、音频或个人练习答案；口语题目可通过上方社区资料库或你有权使用的资料练习。
-- 不要把个人成绩、练习记录、录音或受版权保护的资料提交到公开仓库。
-- Agent 能否读取文件、保留练习记录或创建定时提醒，取决于所用平台及你授予的权限。
-
-## 来源
+## 参考资料
 
 - [IELTS Speaking 考试结构](https://www.ielts.org/take-a-test/test-types/ielts-academic-test/ielts-academic-format-speaking)
 - [IELTS Speaking 四项评分说明](https://ielts.org/news-and-insights/demystifying-the-ielts-speaking-test)
 - [IELTS Speaking Band Descriptors](https://ielts.org/cdn/ielts-guides/ielts-speaking-band-descriptors.pdf)
 
-使用规则见 [Skill 主文件](skills/ielts-speaking-coach/SKILL.md)，安装细节见[安装指南](docs/install.md)。欢迎通过上述渠道反馈，后续会根据实际使用情况持续改进。
+更多规则见 [Skill 主文件](skills/ielts-speaking-coach/SKILL.md)、[计划与周报说明](skills/ielts-speaking-coach/references/weekly-learning-cycle.md)和[安装指南](docs/install.md)。
